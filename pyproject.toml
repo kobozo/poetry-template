@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "poetry-template"
+version = "0.1.0"
+description = ""
+authors = ["Yannick De Backer <ydb@kobozo.eu>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+flake8 = "^6.1.0"
+black = "^23.12.0"
+isort = "^5.13.2"
+pre-commit = "^3.6.0"
+pydocstyle = "^6.3.0"
+pycln = "^2.4.0"
+pre-commit-hooks = "^4.5.0"
+coverage = "^7.3.3"
+mypy = "^1.10.1"
+pandas-stubs = "^2.2.2.240603"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
